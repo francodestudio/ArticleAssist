@@ -3,7 +3,7 @@
 :root {
   --background: oklch(0.98 0.01 90);
   --foreground: oklch(0.99 0.003 95);
-  
+
   --grid-line: oklch(0.85 0.005 90);
 
   --paper: oklch(0.99 0.003 95);
@@ -13,8 +13,8 @@
   --card-foreground: oklch(0.18 0.005 60);
 
   --primary: oklch(0.2 0.005 60);
-  --secondary: oklch(0.93 0.005 90);
-  --tertiary: oklch(0.5 0.008 70);
+  --secondary: oklch(0.5 0.008 70);
+ 
 
   --accent: oklch(0.9 0.006 85);
   --accent-foreground: oklch(0.2 0.005 60);
@@ -41,7 +41,7 @@
 
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
-  --color-tertiary: var(--tertiary);
+ 
 
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
@@ -65,4 +65,5 @@ body {
   background-image: linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
                     linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
   background-size: 30px 30px;
+  font-family: var(--font-display);
 }

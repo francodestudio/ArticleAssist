@@ -16,6 +16,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Navbar />
         {children}
       </body>
+      
     </html>
   );
 }
