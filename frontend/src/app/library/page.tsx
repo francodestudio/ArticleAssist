@@ -1,6 +1,8 @@
 import { LuUpload } from "react-icons/lu";
 import { ImSearch } from "react-icons/im";
 import { BiSort } from "react-icons/bi";
+import { RiDeleteBinLine } from "react-icons/ri";
+import { FaRegEye } from "react-icons/fa";
 
 const FileUpload = () => {
   return (
@@ -37,19 +39,27 @@ const SortMenu = () => {
 
 const DocumentCard = () => {
   return (
-    <div className="flex flex-col border-2 mt-4 w-150 p-2 bg-card hover:shadow-xl cursor-pointer shadow-[6px_6px_0px_0px_black]">
-        <div>
-        <div>
-            <p>Neurips</p>
-            <p>2020</p>
+    <div className="flex flex-col border-2 mt-4 w-150 p-4 bg-card   shadow-[6px_6px_0px_0px_black]">
+        <div className="space-y-2">
+            <div className="flex gap-2 text-secondary text-xs tracking-widest uppercase">
+                <p>Neurips</p>
+                <p>.</p>
+                <p>2020</p>
             </div>
             <p>Retrival Augumented Generation for knoweldge Intensive NLP tasks</p>
-            <p className="text-sm text-secondary">John Doe</p>
+            <p className="text-xs text-secondary tracking-wide">John Doe</p>
         </div>
 
-        <div className="flex gap-2 mt-2">
-            <button>View</button>
-            <button> Delete</button>
+        <div className="flex gap-2 mt-4 py-3 border-t justify-between text-sm font-sans">
+            <span className="flex flex-1 border-2 hover:cursor-pointer items-center justify-center gap-2">
+                <FaRegEye /> 
+                <button className="">View</button>
+            </span>
+
+            <span className=" flex border-2 border-primary w-20 py-1 text-destructive hover:cursor-pointer items-center justify-center gap-2">
+             <RiDeleteBinLine />
+             <button>Delete</button>
+            </span>
         </div>
     </div>
   )
