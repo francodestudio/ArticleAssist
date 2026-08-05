@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  --background: oklch(0.98 0.01 90);
-  --foreground: oklch(0.99 0.003 95);
+  --background: oklch(97.102% 0.01539 86.398);
+  --foreground: oklch(100% 0.00011 271.152);
 
-  --grid-line: oklch(0.85 0.005 90);
+  --grid-line: oklch(93.403% 0.00011 271.152);
 
 
   --ink: oklch(0.18 0.005 60);
@@ -15,8 +15,8 @@
   --secondary: oklch(0.5 0.008 70);
  
 
-  --accent: oklch(0.9 0.006 85);
-  --accent-foreground: oklch(0.2 0.005 60);
+  --accent: oklch(89.598% 0.15256 196.882);
+  --accent-secondary: oklch(95.471% 0.21554 114.604);
 
   --highlight: oklch(0.9 0.075 90);
   --highlight-foreground: oklch(0.2 0.02 70);
@@ -43,7 +43,7 @@
  
 
   --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-secondary: var(--accent-secondary);
 
   --color-highlight: var(--highlight);
   --color-highlight-foreground: var(--highlight-foreground);

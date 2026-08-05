@@ -12,9 +12,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en">
-      <body className="min-h-full flex flex-col ">
+      <body className="min-h-full flex flex-col">
         <Navbar />
-        {children}
+        <div className="ml-50 mr-50 mt-10">
+          {children}
+        </div>
       </body>
       
     </html>
